@@ -1,0 +1,14 @@
+.board {
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+}
+
+.tile { 
+    border-style: solid;
+    border-color: grey;
+}
+
+.tile.drawn {
+    background-color: grey;
+}
