@@ -9,6 +9,9 @@
 .tile { 
     border-style: solid;
     border-color: grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .tile.drawn {
