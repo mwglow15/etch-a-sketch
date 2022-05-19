@@ -19,3 +19,8 @@
 .tile.drawn {
     background-color: grey;
 }
+
+button {
+    margin: 10px;
+    padding: 3px;
+}
