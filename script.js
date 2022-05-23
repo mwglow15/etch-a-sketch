@@ -18,7 +18,10 @@ for (i=0; i<16*16 ; i++) {
 console.log(getComputedStyle(tile).borderWidth);
 
 function addDrawn(e) {
-    this.classList.add('drawn');
+    if (!this.style.backgroundColor) {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        this.style.backgroundColor = "#" + randomColor;
+    }
 }
 
 function resizeGrid () {
@@ -26,7 +29,7 @@ function resizeGrid () {
 
     while(board.firstChild)
         board.removeChild(board.firstChild)
-
+        
     for (i=0;i<newSize*newSize;i++)
     {
         tile.style.width = (boardWidth / newSize - 2) + "px";
